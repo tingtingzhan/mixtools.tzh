@@ -48,6 +48,7 @@ as.fmx.mixEM <- function(x, data = x[['x']], ...) {
     # read \link[mixtools]{gammamixEM} carefully: 'beta' is actually `scale`
     distname <- 'gamma'
   }, stop(x[['ft']], ' not supported yet'))
+  
   new(Class = 'fmx', 
       pars = pars, w = x[['lambda']], distname = distname,
       data = data)
